@@ -5,10 +5,13 @@ module.exports = {
     "./node_modules/flowbite/**/*.js"
 ],
   theme: {
-    extend: {},
+    fontFamily: {
+    'poppins' : ['Poppins']
+  },
+  extend: {},
   },
   plugins: [
-    require('flowbite/plugin-windicss')
+    require('flowbite/plugin')
   ],
 }
 
