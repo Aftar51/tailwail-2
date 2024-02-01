@@ -24,8 +24,13 @@
 
 @layer utilities {
     .home__title,
-    .card__title {
+    .card__title,
+    .section__Title {
         @apply text-4xl font-poppins font-bold uppercase lg:text-6xl
+    }
+
+    .section__Title {
+        @apply text-3xl;
     }
 
     .card__title {
@@ -39,4 +44,9 @@
     .paragraph{
         @apply text-paragraphColor text-xs;
     }
+}
+
+.tabs_wrap ul li:hover,
+.tabs_wrap ul li.active {
+    @apply bg-secondaryColor text-blackColor font-poppins;
 }

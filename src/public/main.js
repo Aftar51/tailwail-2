@@ -16,3 +16,16 @@ closeIcon.addEventListener("click", () => {
 hamburger.addEventListener("click", () => {
     navMenu.classList.remove('hidden')
 })
+
+// TABS
+const tabs = document.querySelectorAll(".tabs_wrap ul li");
+
+tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+        taps.forEach(tab => {
+            tab.classList.remove("active")
+        })
+
+        tap.classList.add('active')
+    })
+})
