@@ -13,6 +13,10 @@
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 </head>
 
 <body>
@@ -217,17 +221,17 @@
 
                     <div class="tabs_wrap">
                         <ul class="flex flex-wrap justify-center gap-3 py-10">
-                            <li class="btn bg-primaryColorLight">All</li>
-                            <li class="btn bg-primaryColorLight">Food</li>
-                            <li class="btn bg-primaryColorLight">Snack</li>
-                            <li class="btn bg-primaryColorLight">Beverage</li>
+                            <li data-tabs="all" class="btn bg-primaryColorLight">All</li>
+                            <li data-tabs="food" class="btn bg-primaryColorLight">Food</li>
+                            <li data-tabs="snack" class="btn bg-primaryColorLight">Snack</li>
+                            <li data-tabs="beverage" class="btn bg-primaryColorLight">Beverage</li>
                         </ul>
                     </div>
                 </div>
                 <div>
                     <ul class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 lg:gap-12">
                         <!-- food -->
-                        <li>
+                        <li class="item_wrap food">
                             <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
                                 <img src="" alt="food image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
                             </div>
@@ -240,7 +244,178 @@
                             </div>
                         </li>
 
-                        <li>
+                        <li class="item_wrap food">
+                            <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                                <img src="" alt="food image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                            </div>
+
+                            <div class="pt-5">
+                                <div class="mb-2">
+                                    <h4 class="card__title"></h4>
+                                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="item_wrap food">
+                            <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                                <img src="" alt="food image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                            </div>
+
+                            <div class="pt-5">
+                                <div class="mb-2">
+                                    <h4 class="card__title"></h4>
+                                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="item_wrap food">
+                            <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                                <img src="" alt="food image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                            </div>
+
+                            <div class="pt-5">
+                                <div class="mb-2">
+                                    <h4 class="card__title"></h4>
+                                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="item_wrap food">
+                            <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                                <img src="" alt="food image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                            </div>
+
+                            <div class="pt-5">
+                                <div class="mb-2">
+                                    <h4 class="card__title"></h4>
+                                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- snack -->
+                        <li class="item_wrap snack">
+                            <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                                <img src="" alt="food image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                            </div>
+
+                            <div class="pt-5">
+                                <div class="mb-2">
+                                    <h4 class="card__title"></h4>
+                                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="item_wrap snack">
+                            <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                                <img src="" alt="food image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                            </div>
+
+                            <div class="pt-5">
+                                <div class="mb-2">
+                                    <h4 class="card__title"></h4>
+                                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="item_wrap snack">
+                            <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                                <img src="" alt="food image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                            </div>
+
+                            <div class="pt-5">
+                                <div class="mb-2">
+                                    <h4 class="card__title"></h4>
+                                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="item_wrap snack">
+                            <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                                <img src="" alt="food image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                            </div>
+
+                            <div class="pt-5">
+                                <div class="mb-2">
+                                    <h4 class="card__title"></h4>
+                                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="item_wrap snack">
+                            <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                                <img src="" alt="food image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                            </div>
+
+                            <div class="pt-5">
+                                <div class="mb-2">
+                                    <h4 class="card__title"></h4>
+                                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!-- Beverage -->
+                        <li class="item_wrap Beverage">
+                            <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                                <img src="" alt="food image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                            </div>
+
+                            <div class="pt-5">
+                                <div class="mb-2">
+                                    <h4 class="card__title"></h4>
+                                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="item_wrap Beverage">
+                            <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                                <img src="" alt="food image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                            </div>
+
+                            <div class="pt-5">
+                                <div class="mb-2">
+                                    <h4 class="card__title"></h4>
+                                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="item_wrap Beverage">
+                            <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                                <img src="" alt="food image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                            </div>
+
+                            <div class="pt-5">
+                                <div class="mb-2">
+                                    <h4 class="card__title"></h4>
+                                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="item_wrap Beverage">
+                            <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                                <img src="" alt="food image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
+                            </div>
+
+                            <div class="pt-5">
+                                <div class="mb-2">
+                                    <h4 class="card__title"></h4>
+                                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="item_wrap Beverage">
                             <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
                                 <img src="" alt="food image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
                             </div>
@@ -261,7 +436,7 @@
     </main>
 
     <!-- JavaScript -->
-    <script src="/src/public/main.js"></script>
+    <script src="main.js"></script>
     <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
 </body>
 
