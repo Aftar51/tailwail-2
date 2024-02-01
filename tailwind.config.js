@@ -6,8 +6,7 @@ module.exports = {
 ],
   theme: {
     fontFamily: {
-    'poppins' : ['Poppins'],
-
+    'poppins' : ['Poppins'],  
   },
   extend: {
     colors: {
@@ -22,6 +21,18 @@ module.exports = {
       darkColor: '#000',
       darkColorLight: '#171717',
     }
+  },
+  container: {
+    center: true,
+    padding: {
+      DEFAULT: '1rem',
+      sm: '1.5rem'
+    }
+  },
+  screen:{
+    sm: '480px',
+    md: '768px',
+    lg: '1024px'
   },
   },
   plugins: [
