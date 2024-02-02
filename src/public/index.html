@@ -18,7 +18,7 @@
 
 <body>
     <!-- header -->
-    <header class="bg-primaryColor fixed top-0 left-0 w-full z-50">
+    <header class="bg-primaryColor dark:bg-darkColorLight fixed top-0 left-0 w-full z-50" id="header">
         <nav class="container relative h-14 flex justify-between items-center">
             <div>
                 <a href="#" class="text-2xl uppercase">
@@ -26,7 +26,7 @@
                 </a>
             </div>
 
-            <div class="hidden absolute top-0 left-0 w-full py-14 bg-primaryColor border-b border-secondaryColor md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto"
+            <div class="hidden absolute top-0 left-0 w-full py-14 bg-primaryColor dark:bg-darkColorLight border-b border-secondaryColor md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto"
                 id="nav-menu">
                 <ul class="flex flex-col text-center gap-5 md:flex-row">
                     <li>
@@ -52,7 +52,7 @@
             </div>
 
             <div class="flex items-center gap-5">
-                <i class="ri-moon-line cursor-pointer ml-4 text-xl"></i>
+                <i class="ri-moon-line cursor-pointer ml-4 text-xl" id="theme-toggle"></i>
 
                 <div class="md:hidden" id="hamburger">
                     <i class="ri-menu-2-line cursor-pointer text-xl"></i>
@@ -533,7 +533,7 @@
     <footer>
         <section class="footer">
             <div class="container">
-                <ul class="grid grid-cols-1 items-start gap-5 pb-5 md:grid-cols-2">
+                <ul class="grid grid-cols-1 items-start gap-5 pb-5 md:grid-cols-2 lg:grid-cols-4">
                     <li>
                         <div class="space-y-3">
                             <a href="" class="text-4xl font-poppins uppercase">
@@ -581,27 +581,43 @@
 
                     <li class="space-y-8">
                         <div class="space-y-2">
-                            <h3 class="text-lg uppercase font-poppins">Phone</h3>
+                            <h3 class="text-lg uppercase font-poppins">Address</h3>
 
                             <p class="flex items-center gap-2 text-xs">
-                                
-                                +62 000 000 000
+                                <i class="fa-solid fa-location-dot text-secondaryColor"></i>
+                                Address goes here
                             </p>
                         </div>
 
                         <div class="space-y-2">
-                            <h3 class="text-lg uppercase font-poppins">Email</h3>
+                            <h3 class="text-lg uppercase font-poppins">Follow us</h3>
 
-                            <p class="flex items-center gap-2 text-xs">
-                                
-                                afftardarda@gamil.com
-                            </p>
+                            <div class="space-x-3">
+                                <i
+                                    class="fa-brands fa-facebook-f teext-lg cursor-pointer text-secondaryColor hover:-translate-y-1 ease-in duration-200"></i>
+                                <i
+                                    class="fa-brands fa-twitter teext-lg cursor-pointer text-secondaryColor hover:-translate-y-1 ease-in duration-200"></i>
+                                <i
+                                    class="fa-brands fa-square-instagram teext-lg cursor-pointer text-secondaryColor hover:-translate-y-1 ease-in duration-200"></i>
+                            </div>
                         </div>
                     </li>
                 </ul>
+
+                <div
+                    class="flex flex-col items-center border-t border-primaryColorLight py-5 md:flex-row md:justify-between">
+                    <p class="paragraph">Es Cream Template Kit By Aftar darda</p>
+                    <p class="paragraph">Copyright © 2024. All rights reserved</p>
+                </div>
             </div>
         </section>
     </footer>
+
+    <!-- Scroll up -->
+        <a href="" class="fixed right-4 -button-1/2 bg-secondaryColor shadow-sm inline-block px-10 py-10 
+        rounded-full text-lg text-blackColor z-50 hover:-translate-y-1 ease-in duration-200" id="scroll-up">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
 
     <!-- JavaScript -->
     <script src="main.js"></script>

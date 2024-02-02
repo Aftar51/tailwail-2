@@ -4,7 +4,8 @@ module.exports = {
     "./src/**/*.{html,js}",
     "./node_modules/flowbite/**/*.js"
 ],
-  theme: {
+darkMode: 'class',
+theme: {
     fontFamily: {
     'poppins' : ['Poppins'],  
   },
