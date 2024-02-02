@@ -25,11 +25,11 @@
 @layer utilities {
     .home__title,
     .card__title,
-    .section__Title {
+    .section__title {
         @apply text-4xl font-poppins font-bold uppercase lg:text-6xl
     }
 
-    .section__Title {
+    .section__title {
         @apply text-3xl;
     }
 
