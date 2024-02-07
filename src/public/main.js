@@ -114,5 +114,28 @@ const scrollHeader = () => {
 }
 window.addEventListener('scroll', scrollUp);
 // SCROLL SECTIONS ACTIVE LINK
+const activelink = () => {
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".nav__link");
+
+    let current = "home";
+
+    sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+
+        if (this.scrollY >= sectionTop - 60) {
+            current = section.getAttribute("id");
+        };
+    });
+
+    navLinks.forEach((item) => {
+        item.classList.remove("text-secondaryColor");
+        if (item.href.includes(current)) {
+            item.classList.add("text-secondaryColor");
+        }
+    });
+};
+
+window.addEventListener('srcoll', activelink)
 
 // SCROLL REVEAL ANIMATION
