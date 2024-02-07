@@ -20,9 +20,8 @@ hamburger.addEventListener("click", () => {
 // TABS
 const tabs = document.querySelectorAll(".tabs_wrap ul li");
 const all = document.querySelectorAll('.item_wrap');
-const foods = document.querySelectorAll('.food');
-const beverages = document.querySelectorAll('.baverage');
-const snacks = document.querySelectorAll('.snack');
+const iceCream = document.querySelectorAll('.ice-cream');
+const teas = document.querySelectorAll('.tea');
 
 tabs.forEach(tab => {
     tab.addEventListener("click", () => {
@@ -35,22 +34,16 @@ tabs.forEach(tab => {
         all.forEach(item => {
             item.style.display = 'none'
         });
-        if (tabval == 'food') {
-            foods.forEach(item => {
+        if (tabval == 'ice-cream') {
+            iceCream.forEach(item => {
                 item.style.display = 'block'
             });
         }
-        else if (tabval == 'snack') {
-            foods.forEach(item => {
+        else if (tabval == 'tea') {
+            iceCream.forEach(item => {
                 item.style.display = 'block'
             });
-        }
-        else if (tabval == 'beverage') {
-            beverages.forEach(item => {
-                item.style.display = 'block'
-            });
-        }
-        else {
+        }else {
             all.forEach(item => {
                 item.style.display = 'block'
             });
@@ -140,3 +133,13 @@ const activelink = () => {
 window.addEventListener('srcoll', activelink)
 
 // SCROLL REVEAL ANIMATION
+const sr = ScrollReveal({
+    origin: "top",
+    distance: "60px",
+    duration: 2500,
+    delay: 400
+})
+
+sr.reveal(".home__image");
+sr.reveal(".home__content", { origin: "button"});
+sr.reveal(".category__card", { interval: 300});

@@ -1300,6 +1300,10 @@ section {
   width: 100%;
 }
 
+.w-60 {
+  width: 15rem;
+}
+
 .max-w-10 {
   max-width: 2.5rem;
 }

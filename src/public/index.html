@@ -67,10 +67,10 @@
         <section id="home">
             <div class="container flex flex-col items-center gap-10">
                 <div class="mx-auto md:basis-1/2 lg:basis-2/5 animate-movingY">
-                    <img src="/images/c8f080ad3c54bb1f6041ebb8b327b52f.jpg" alt="home image" class="max-w-60 md:w-full rounded-xl">
+                    <img src="/images/c8f080ad3c54bb1f6041ebb8b327b52f.jpg" alt="home image" class="home__image max-w-60 md:w-full rounded-xl">
                 </div>
 
-                <div class="text-center md:basis-1/2 md:text-start lg:basis-3/5">
+                <div class="home__content text-center md:basis-1/2 md:text-start lg:basis-3/5">
                     <h1 class="home__title">Mixue Ice Cream & Tea</h1>
                     <div class="separator mx-auto md:mx-0"></div>
                     <p class="paragraph">Mixue telah hadir di Indonesia sejak tahun 2020 dengan gerai pertamanya di
@@ -105,9 +105,9 @@
         <section id="category">
             <div class="container flex flex-col gap-5 md:flex-row">
                 <!-- card 1 -->
-                <div class="bg-secondaryColor flex py-3 rounded-lg overflow-hidden md:flex-1">
+                <div class="category__card bg-secondaryColor flex py-3 rounded-lg overflow-hidden md:flex-1">
                     <div class="basis-1/3 relative">
-                        <img src="" alt="category image" class="absolute w-28 -bottom-4 -left-4">
+                        <img src="/images/e27e0659d0e22fd3ce1861647ffb73b5-removebg-preview.png" alt="category image" class="absolute w-28 -bottom-4 -left-4">
                     </div>
                     <div class="">
                         <div class=" mb-2">
@@ -119,9 +119,9 @@
                     </div>
                 </div>
                 <!-- card 2 -->
-                <div class="bg-redColor flex py-3 rounded-lg overflow-hidden md:flex-1">
+                <div class="category__card bg-redColor flex py-3 rounded-lg overflow-hidden md:flex-1">
                     <div class="basis-1/3 relative">
-                        <img src="" alt="category image" class="absolute w-28 -bottom-4 -left-4">
+                        <img src="/images/b6510e35044525a3acd2e314ac83c5a6-removebg-preview.png" alt="category image" class="absolute w-28 -bottom-4 -left-4">
                     </div>
                     <div class="">
                         <div class=" mb-2">
@@ -141,7 +141,7 @@
                 <!-- card 1 -->
                 <div
                     class="bg-primaryColorLight dark:bg-darkColorLight flex flex-col p-5 rounded-lg md:flex-row md:items-center lg:flex-row-reverse lg:flex-1">
-                    <img src="" alt="Promo image" class="w-40 mx-auto hover:animate-movingY md:mx-5">
+                    <img src="/images/b6510e35044525a3acd2e314ac83c5a6-removebg-preview.png" alt="Promo image" class="w-40 mx-auto hover:animate-movingY md:mx-5">
 
                     <div class="space-y-2 pt-5 md:pt-0">
                         <p class="text-xs text-secondaryColor">Promo</p>
@@ -211,10 +211,8 @@
                     <div class="tabs_wrap">
                         <ul class="flex flex-wrap justify-center gap-3 py-10">
                             <li data-tabs="all" class="btn bg-primaryColorLight dark:bg-darkColorLight">All</li>
-                            <li data-tabs="food" class="btn bg-primaryColorLight dark:bg-darkColorLight">Food</li>
-                            <li data-tabs="snack" class="btn bg-primaryColorLight dark:bg-darkColorLight">Snack</li>
-                            <li data-tabs="beverage" class="btn bg-primaryColorLight dark:bg-darkColorLight">Beverage
-                            </li>
+                            <li data-tabs="ice-cream" class="btn bg-primaryColorLight dark:bg-darkColorLight">Ice Cream</li>
+                            <li data-tabs="tea" class="btn bg-primaryColorLight dark:bg-darkColorLight">Tea</li>
                         </ul>
                     </div>
                 </div>
@@ -233,7 +231,6 @@
                                     <h4 class="card__title"></h4>
                                     <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                                 </div>
-
                                 <p class="text-secondaryColor">$42.00</p>
                             </div>
                         </li>
@@ -250,6 +247,7 @@
                                     <h4 class="card__title"></h4>
                                     <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                                 </div>
+                                <p class="text-secondaryColor">$42.00</p>
                             </div>
                         </li>
 
@@ -265,6 +263,7 @@
                                     <h4 class="card__title"></h4>
                                     <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                                 </div>
+                                <p class="text-secondaryColor">$42.00</p>
                             </div>
                         </li>
 
@@ -280,21 +279,7 @@
                                     <h4 class="card__title"></h4>
                                     <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                                 </div>
-                            </div>
-                        </li>
-
-                        <li class="item_wrap food">
-                            <div
-                                class="h-56 grid place-items-center dark:bg-darkColorLight dark:hover:bg-secondaryColor  bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
-                                <img src="" alt="food image"
-                                    class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
-                            </div>
-
-                            <div class="pt-5">
-                                <div class="mb-2">
-                                    <h4 class="card__title"></h4>
-                                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                                </div>
+                                <p class="text-secondaryColor">$42.00</p>
                             </div>
                         </li>
 
@@ -311,6 +296,7 @@
                                     <h4 class="card__title"></h4>
                                     <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                                 </div>
+                                <p class="text-secondaryColor">$42.00</p>
                             </div>
                         </li>
 
@@ -326,6 +312,7 @@
                                     <h4 class="card__title"></h4>
                                     <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                                 </div>
+                                <p class="text-secondaryColor">$42.00</p>
                             </div>
                         </li>
 
@@ -341,6 +328,7 @@
                                     <h4 class="card__title"></h4>
                                     <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                                 </div>
+                                <p class="text-secondaryColor">$42.00</p>
                             </div>
                         </li>
 
@@ -356,97 +344,7 @@
                                     <h4 class="card__title"></h4>
                                     <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                                 </div>
-                            </div>
-                        </li>
-
-                        <li class="item_wrap snack">
-                            <div
-                                class="h-56 grid place-items-center dark:bg-darkColorLight dark:hover:bg-secondaryColor  bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
-                                <img src="" alt="food image"
-                                    class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
-                            </div>
-
-                            <div class="pt-5">
-                                <div class="mb-2">
-                                    <h4 class="card__title"></h4>
-                                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <!-- Beverage -->
-                        <li class="item_wrap Beverage">
-                            <div
-                                class="h-56 grid place-items-center dark:bg-darkColorLight dark:hover:bg-secondaryColor  bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
-                                <img src="" alt="food image"
-                                    class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
-                            </div>
-
-                            <div class="pt-5">
-                                <div class="mb-2">
-                                    <h4 class="card__title"></h4>
-                                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="item_wrap Beverage">
-                            <div
-                                class="h-56 grid place-items-center dark:bg-darkColorLight dark:hover:bg-secondaryColor  bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
-                                <img src="" alt="food image"
-                                    class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
-                            </div>
-
-                            <div class="pt-5">
-                                <div class="mb-2">
-                                    <h4 class="card__title"></h4>
-                                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="item_wrap Beverage">
-                            <div
-                                class="h-56 grid place-items-center dark:bg-darkColorLight dark:hover:bg-secondaryColor  bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
-                                <img src="" alt="food image"
-                                    class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
-                            </div>
-
-                            <div class="pt-5">
-                                <div class="mb-2">
-                                    <h4 class="card__title"></h4>
-                                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="item_wrap Beverage">
-                            <div
-                                class="h-56 grid place-items-center dark:bg-darkColorLight dark:hover:bg-secondaryColor  bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
-                                <img src="" alt="food image"
-                                    class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
-                            </div>
-
-                            <div class="pt-5">
-                                <div class="mb-2">
-                                    <h4 class="card__title"></h4>
-                                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li class="item_wrap Beverage">
-                            <div
-                                class="h-56 grid place-items-center dark:bg-darkColorLight dark:hover:bg-secondaryColor  bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
-                                <img src="" alt="food image"
-                                    class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24">
-                            </div>
-
-                            <div class="pt-5">
-                                <div class="mb-2">
-                                    <h4 class="card__title"></h4>
-                                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                                </div>
+                                <p class="text-secondaryColor">$42.00</p>
                             </div>
                         </li>
                     </ul>
@@ -633,6 +531,7 @@
     <!-- End Scroll up -->
 
     <!-- JavaScript -->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="main.js"></script>
     <script src="/node_modules/flowbite/dist/flowbite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
