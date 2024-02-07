@@ -1,9 +1,9 @@
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('nav-manu');    
 const closeIcon = document.getElementById("nav-close");
-const navLink = document.querySelectorAll(".nav__link")
+const navLinks = document.querySelectorAll(".nav__link")
 
-navLink.forEach(link =>
+navLinks.forEach(link =>
     link.addEventListener("click", () => {  
         navMenu.classList.add('hidden')
     })
