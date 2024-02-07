@@ -142,4 +142,17 @@ const sr = ScrollReveal({
 
 sr.reveal(".home__image");
 sr.reveal(".home__content", { origin: "button"});
+
 sr.reveal(".category__card", { interval: 300});
+
+sr.reveal(".about__card-1", { origin: "left"});
+sr.reveal(".about__card-2", { origin: "right"});
+
+sr.reveal(".about__img", { origin: "button"});
+sr.reveal(".about__content", { origin: "top"});
+
+sr.reveal(".menu__items", { origin: "left"});
+
+sr.reveal(".customer__review", { origin: "right"});
+
+sr.reveal(".footer");
