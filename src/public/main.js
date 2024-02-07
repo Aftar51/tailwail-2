@@ -113,12 +113,13 @@ const scrollHeader = () => {
     }
 }
 window.addEventListener('scroll', scrollUp);
+
 // SCROLL SECTIONS ACTIVE LINK
 const activelink = () => {
     const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll(".nav__link");
 
-    let current = "home";
+    let current = 'home';
 
     sections.forEach((section) => {
         const sectionTop = section.offsetTop;

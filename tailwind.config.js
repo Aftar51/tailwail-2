@@ -22,10 +22,21 @@ theme: {
       darkColor: '#000',
       darkColorLight: '#171717',
     },
+    animation: {
+      "neon" : "neon 1s ease-in-out infinite alternate",
+    },
     keyframes: {
       move: {
         "50%": {transform: 'translateY(-1rem)'}
-      }
+      },
+      neon: {
+        "0%": {
+          textShadow: "0 0 10px #00B9FC",
+        },
+        "100%": {
+          textShadow: "0 0 10px #ff0000",
+        },
+      },
     },
     animation: {
       'movingY': 'move 2s linear infinite'
