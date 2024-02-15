@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mixue</title>
+    <title>portofolio</title>
 
     <!-- TailwaindCSS -->
     <link rel="stylesheet" href="style.css">
@@ -17,7 +17,66 @@
 </head>
 
 <body class="font-nunito">
-    <h1 class="text-3xl">TEST</h1>
+    <!-- Into section -->
+    <div class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-300">
+        <!-- navbar -->
+        <nav class="w-full fixed top-0 bg-white">
+            <div class="container mx-auto py-5 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <img src="" alt="" class="w-8">
+                    <span class="text-2xl font-bold text-indigo-900">Portofolio</span>
+                </div>
+                <ul class="hidden md:flex space-x-10 text-gray-600 font-bold text-sm uppercase">
+                    <li class="hover:text-gray-50">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="hover:text-gray-50">
+                        <a href="#about">About Me</a>
+                    </li>
+                    <li class="hover:text-gray-50">
+                        <a href="#project">Project</a>
+                    </li>
+                    <li class="hover:text-gray-50">
+                        <a href="#sertivicat">Sertivicat</a>
+                    </li>
+                    <li class="hover:text-gray-50">
+                        <a href="#contact">Contact Me</a>
+                    </li>
+                </ul>
+                <img src="/images/moon.png" class="hindden md:block w-5 cursor-pointer" alt="">
+                <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                    <div class="w-6 h-0.5 bg-black"></div>
+                </div>
+                <ul id="menu" class="hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center">
+                    <li class="">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="">
+                        <a href="#about">About Me</a>
+                    </li>
+                    <li class="">
+                        <a href="#project">Project</a>
+                    </li>
+                    <li class="">
+                        <a href="#sertivicat">Sertivicat</a>
+                    </li>
+                    <li class="">
+                        <a href="#contact">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- intro contect -->
+        <!-- image -->
+        <img class="absolute bottom-0 right-0 lg:left-0 mx-auto h-5/6 object-cover" src="" alt="">
+        <!-- circle -->
+        <div class="hidden lg:block absolute -bottom-1/4 right-0 left-0 mx-auto w-96 h-96 bg-indigo-900 rounded-full"></div>
+        <!-- animated text -->
+        <!-- texts -->
+    </div>
+    <script src="/src/public/app.js"></script>
 </body>
 
 </html>
