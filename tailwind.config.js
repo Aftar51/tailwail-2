@@ -22,9 +22,6 @@ theme: {
       darkColor: '#000',
       darkColorLight: '#171717',
     },
-    animation: {
-      "neon" : "neon 1s ease-in-out infinite alternate",
-    },
     keyframes: {
       move: {
         "50%": {transform: 'translateY(-1rem)'}
