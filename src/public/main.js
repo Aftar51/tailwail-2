@@ -61,7 +61,7 @@ if(localStorage.getItem("mode") == "dark") {
     lightMode();
 }
 
-themeBtn.addEventListener('click', (e)=> {
+themeBtn.addEventListener('click', (e)=> {  
     if(localStorage.getItem("mode") == "light") {
         darkMode();
     } else {
