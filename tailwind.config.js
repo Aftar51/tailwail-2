@@ -17,7 +17,6 @@ theme: {
       paragraphColor: '#c0c0c0',
       whiteColor: '#fff',
       blackColor: '#000',
-      greenColor: '#007936',
       redColor: '#cc3433',
       darkColor: '#000',
       darkColorLight: '#171717',
